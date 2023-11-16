@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Edu TAS Beginner', cursive;
+}
+img {
+   width: 300px;
+   height: 300px;
+   border-radius:50%;
+}
+
+header {
+    padding: 25px 50px;
+    background-image: url("1654158695_20-phonoteka-org-p-tailer-derden-oboi-krasivo-24.png") ;
+    background-size: 100%;
+    background-position-y: -375px;
+    background-position-x: 250px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: bisque;
+    text-shadow: 8px 8px 7px;
+    font-size: 26px;
+    color:rgb(202, 175, 206);
+    margin-left: 100px;
+}
+header > p {
+    padding-top: 9px;
+    font-size: 30px;
+    color: firebrick;
+    margin-left: 200px;
+}
+ main{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-template-rows: repeat(3,1fr);
+    text-align: center;
+    padding: 50px 100px;
+ }
+
+section:nth-child(1) {
+    grid-row: span 2;
+}
+section:nth-child(2){
+    grid-row: span 2;
+}
+section:nth-child(3) {
+    grid-column: span 2;
+    margin-top: 25px;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 20px;
+}
+
+p{
+    margin: 5px;
+    font-size: 20px;
+}
+
+section:nth-child(2) > section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px; 
+    text-align: center;
+}
+
+section:nth-child(2) h3 {
+    text-align: center;
+}
+section:nth-child(3){
+    text-align: center;
+    display: grid;
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+section:nth-child(4){
+    text-align: center;
+    display: grid ;}
+
+span {
+    font-size:inherit !important;
+    margin-right: 5px;
+    color: darkred
+}
+@media (max-width:900px) {
+    *{
+        grid-template-columns: 1fr !important;
+    }
+    header {
+        text-align: center;
+        background-color: rgb(32, 32, 32);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: bottom;
+        background-position-x: 0;
+    }
+    header > img {
+        margin-bottom: 25px;
+    }
+    h1 {
+        margin: 0;
+    }
+    header > p{
+        text-align: right;
+        padding: 0;
+    }
+    main {
+        display: block;
+    }
+    h2 { 
+        margin: 25px 0;      
+    }
+}
